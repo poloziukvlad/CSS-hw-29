@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svg</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="100" cy="100" r="50" fill="red">
+            <animate
+              attributeName="fill"
+              values="red;blue;green"
+              dur="4s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 100 100"
+            to="360 100 100"
+            dur="4s"
+            repeatCount="indefinite"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
